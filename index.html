@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS Reset */
+        body {
+            background-color: black;
+            height: 1000px;
+            font-family: monospace;
+            color: #ffffff;
+            margin: 0%;
+            padding: 0%;
+            background: url("img/bg.webp");
+            background-position: centre top;
+            background-repeat: no-repeat;
+            background-size: 1600px;
+        }
+
+        .left {
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+            /* border: 3px solid orange; */
+            font-size: 20px;
+        }
+
+        .left img {
+            width: 100px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 42%;
+            margin: 20px auto;
+            /* border: 3px solid rgb(179, 255, 0); */
+        }
+
+        .right {
+            position: absolute;
+            right: 32px;
+            top: 20px;
+            display: inline-block;
+            /* border: 3px solid rgb(0, 221, 255); */
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 22px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 35px 25px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: darkgray;
+        }
+
+        .btn {
+            font-family: monospace;
+            margin: 0px 10px;
+            background-color: rgb(2, 2, 2);
+            color: white;
+            border: 2px solid rgb(248, 246, 246);
+            border-radius: 10px;
+            padding: 4px 14px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .btn:hover {
+            background-color: #ffffff;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .container {
+            border: 4px white dotted;
+            margin: 300px 30px;
+            padding: 10px 10px;
+            border-radius: 7px;
+            color: #ffffff;
+            width: 30%;
+        }
+
+        .form input {
+            font-family: monospace;
+            font-size: 16px;
+            margin: 6px auto;
+            padding: 4px 4px;
+            width: 350px;
+            border: #ffffff dotted 2px;
+            border-radius: 6px;
+            text-align: center;
+            display: block;
+            font-weight: bolder;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            width: 360px;
+            margin: 2px 50px;
+        }
+
+        .para {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 2px white solid;
+            margin: 20px 20px;
+            margin-bottom: 200px;
+            width: 80%;
+            max-width: 800px;
+            /* Add a max-width for better readability */
+            padding: 20px;
+            /* Add padding for better spacing */
+            position: absolute;
+            top: 123%;
+            /* Position the element vertically at 50% from the top */
+            left: 40%;
+            /* Position the element horizontally at 50% from the left */
+            transform: translate(-50%, -50%);
+            /* Center the element using transform */
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Add a semi-transparent background */
+            color: #ffffff;
+            z-index: 2;
+            /* Place the element above other content */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left: for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="Just Gym"><br>
+            GYM Studio
+        </div>
+        <!-- mid: for navigation menu -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Regarding</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right: for buttons -->
+        <div class="right">
+            <button class="btn">Call us </button>
+            <button class="btn">Text us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Now...Become Wow!!!</h1>
+        <form action="noaction.php"></form>
+        <div class="form">
+            <input type="text" class="name" placeholder="Enter your Name">
+        </div>
+        <div class="form">
+            <input type="text" class="name" placeholder="Enter your Age">
+        </div>
+        <div class="form">
+            <input type="text" class="name" placeholder="Enter your Gender">
+        </div>
+        <div class="form">
+            <input type="text" class="name" placeholder="Enter your Locality">
+        </div>
+        <div class="form">
+            <input type="text" class="name" placeholder="Enter your Email ID">
+        </div>
+        <div class="form">
+            <input type="text" class="name" placeholder="Enter your Contact Number">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+    <div class="para">
+        <h3>WHY US?</h3>
+        <p>"We understand what you need to achieve your health and fitness goals. We offer a sustainable programme which
+            incorporates food & fitness you love - all whilst getting the body you love too! <br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A custom plan bespoke to you and your goals
+            Achievable for all fitness levels
+            Quick & easy meal plans tailored to your diet
+            Support for all your body struggles
+            We have started where you are today!"</p>
+    </div>
+</body>
+
+</html>
